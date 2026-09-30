@@ -1,0 +1,31 @@
+{
+  "name": "dsh-runtime-harmonyos",
+  "version": "0.1.0",
+  "description": "DSH Runtime for HarmonyOS: run the DeepSeek Harness agent kernel inside a HarmonyOS ThreadWorker. Community project, not affiliated with DeepSeek.",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "keywords": [
+    "harmonyos",
+    "arkts",
+    "agent",
+    "dsh",
+    "llm",
+    "threadworker"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "build": "node build/cli.mjs",
+    "example:prepare": "node scripts/prepare-example.mjs"
+  },
+  "dependencies": {
+    "harmonyos-node-compat": "github:TommyZeng777/harmonyos-node-compat",
+    "zone.js": "0.16.3"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12"
+  }
+}
